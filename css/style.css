@@ -1,0 +1,604 @@
+
+/*全体　共通
+最初から設定してあるので特に変更
+しなくても大丈夫です♪
+-----------------*/
+body{
+	font-family: Roboto, "Yu Gothic Medium", "游ゴシック Medium", YuGothic, "游ゴシック体", "ヒラギノ角ゴ Pro W3", "メイリオ", sans-serif;
+	line-height: 1.75;
+	font-size: 16px;
+}
+
+
+/*　パディングをサイズ内側にする処理　*/
+* {
+	padding:0;
+	margin:0;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	-o-box-sizing: border-box;
+	-ms-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+/*ーーーーーーーーーーー*/
+/*この下から記述*/
+/*ーーーーーーーーーーー*/
+
+
+
+
+
+/*どの部分のcssに対して
+命令をしているのかコメントを
+記載しよう！
+---------------------*/
+
+img {
+	max-width: 100%;
+	height: auto;
+}
+
+/*トップ画面
+---------------------*/
+h1 {
+	font-size:48px;
+	
+}
+
+#subtitle {
+	font-size:36px;
+	
+}
+
+.top {
+	background-image: url("../img/mainbg.png") ;
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+	color: #ffffff;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	height: 450px;
+	line-height: 40px;
+}
+
+@keyframes typing { from { width: 0; } }
+@keyframes caret { 50% { border-color: transparent; } }
+
+#subtitle {
+font-family:; 
+width: 41ch;
+border-right: .08em solid;
+overflow: hidden;
+font-size: ;
+white-space: nowrap;
+animation: typing 5s steps(50, end), caret .5s step-end infinite;
+}
+
+h1 {
+	font-family:; 
+width: 24ch;
+border-right: .08em solid;
+overflow: hidden;
+font-size: ;
+white-space: nowrap;
+animation: typing 5s steps(14, end), caret .5s step-end infinite;
+}
+
+
+
+/*ナビ画面
+---------------------*/
+.navi {
+	
+	height: 80px;
+	font-size: 21px;
+	border-bottom:solid 1px #efefef;
+	color: black;
+	display: flex;
+	padding-top: 20px;
+	
+    z-index: 10;
+}
+
+
+.navi_text {
+	display: flex;
+    text-decoration: wavy;
+	justify-content: flex-end;
+	width: 50%;
+	
+	
+}
+
+
+.navi_text_text {
+	width: 20%;
+	
+}
+
+.navi_text_text a {
+	color: darkslategray;
+}
+
+.navi_img {
+	width: 50%;
+	padding-left: 100px;
+}
+
+.navi{
+    background: #fff;
+    display: flex;
+    padding: 20px;
+    position: absolute;
+    justify-content: space-between;
+    width: 100%;
+}
+.navi.fixed {
+  position: fixed;
+  width: 100%;
+  top: 0;
+  z-index: 1000;
+}
+
+/*ABOUT画面
+---------------------*/
+.about {
+	text-align: center;
+}
+
+.about h2 {
+	margin-top: 120px;
+	color: #ffd61a;
+	font-size: 24px;
+}
+
+#about1 {
+	margin-top: 24px;
+	margin-bottom: 64px;
+}
+
+#about2 {
+	margin-bottom: 40px;
+}
+
+#about3 {
+	margin: 40px 40px;
+}
+
+#about4 {
+	margin-bottom: 80px;
+}
+
+.slideabout {
+	width: 400%;
+	position: relative;
+	left: 0;
+	-webkit-animation: leftSlide 90s linear 0s infinite;
+	animation: leftSlide 90s linear 0s infinite;
+    transform: translate3d(0, 0, 0);
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+	overflow: hidden;
+	    display: block;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+}
+
+
+.slideabout {position: relative;
+    -webkit-animation: leftSlide 90s linear 0s infinite;
+    animation: leftSlide 90s linear 0s infinite;
+    transform: translate3d(0, 0, 0);
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    overflow: hidden;}
+/*COURSE画面
+---------------------*/
+.coursemain {
+	background-color: #fafafa;
+}
+
+.course {
+	text-align: center;
+}
+
+.course h2 {
+	color: #222222;
+	margin-top: 64px;
+	margin-bottom: 24px;
+}
+
+.course p {
+	margin-bottom: 60px;
+}
+
+.coursebox1 {
+	display: flex;
+	justify-content: center;
+}
+
+.coursebox1_img {
+	width: 50%;
+}
+
+.coursebox1_img_img {
+	width: 100%;
+}
+
+.coursebox1_text {
+	width: 50%;
+	display: flex;
+	align-items: center;
+	padding-left: 48px;
+}
+
+.coursebox1_text p {
+    margin-top: 40px;
+}
+
+.coursebox2 {
+	display: flex;
+	justify-content: center;
+}
+
+.coursebox2_img {
+	width: 50%;
+}
+
+.coursebox2_img_img {
+	width: 100%;
+}
+
+.coursebox2_text {
+	width: 50%;
+	display: flex;
+	align-items: center;
+	justify-content: flex-end;
+	padding-right: 48px;
+}
+
+
+.coursebox2_text p {
+    margin-top: 40px;
+}
+.coursebox3 {
+	display: flex;
+	justify-content: center;
+}
+
+.coursebox3_img {
+	width: 50%;
+}
+
+.coursebox3_img_img {
+	width: 100%;
+}
+
+.coursebox3_text {
+	width: 50%;
+	display: flex;
+	align-items: center;
+	padding-left: 48px;
+}
+
+.coursebox3_text p {
+    margin-top: 40px;
+}
+/*NEWS画面
+---------------------*/
+.news {
+	text-align: center;
+}
+
+.news h2 {
+	margin-top: 64px;
+	color: #ffd61a;
+	font-size: 24px;
+}
+
+.news p {
+	margin-bottom: 64px;
+}
+
+#newsdate {
+	margin-top: 32px;
+	margin-bottom: 24px;
+}
+
+.news2 {
+	margin-left: 32px;
+	margin-right: 32px;
+}
+
+.newswrapper{
+	display: flex;
+	justify-content: center;
+}
+
+
+
+/*MORE画面
+---------------------*/
+#more {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	font-size: 21px;
+	text-align: center;
+	background-color: #ffd61a;
+	width: 300px;
+	height: 60px;
+	margin: 56px auto 48px;
+}
+
+#more:hover{
+	color: aqua;
+}
+
+/*ACCESS画面
+---------------------*/
+.access {
+	
+	padding-top: 64px;
+	padding-bottom: 56px;
+	background-color: #fafafa;
+}
+
+.access h2 {
+	margin-bottom: 24px;
+	text-align: center;
+}
+
+.access p {
+	margin-bottom: 60px;
+	text-align: center;
+}
+
+.info {
+	margin-top: 60px;
+	
+}
+
+.info_list {
+ 
+}
+
+.info_title {
+    clear: left;
+    float: left;
+    display: block;
+    width: 48%;
+    margin-bottom: 20px;
+    padding-left: 540px;
+    
+}
+
+.info_detail {
+	margin-bottom: 20px;
+}
+
+
+
+
+
+/*CONTACT画面
+---------------------*/
+.contact {
+	text-align: center;
+}
+
+.contact h2 {
+	margin-top: 64px;
+	margin-bottom: 24px;
+}
+
+#contact2 {
+	margin-top: 64px;
+	margin-bottom: 32px;
+}
+
+#contact3 {
+	margin-bottom: 80px;
+}
+
+/*FORM画面
+---------------------*/
+
+form {
+
+}
+
+
+
+input[type="text"],input[type="email"]{
+  border: solid 1px #bfbfbf;
+ width: 328px;
+ height: 36px;
+
+}
+
+.textf {
+	display: flex;
+	justify-content: center;
+} 
+
+.textf dl {
+	width: 100%;
+}
+
+.textf_f {
+	display: flex;
+	justify-content: center;
+	margin-bottom: 24px;
+} 
+
+#username {
+	margin-left: 78px;
+}
+
+#kana {
+	margin-left: 78px;
+}
+
+.textf_f dt{
+	padding-right: 120px;
+}
+
+textarea {
+	border: solid 1px #bfbfbf;
+	width: 328px;
+	height: 108px;
+
+}
+
+.motiv {
+	display: flex;
+	justify-content: center;
+	margin-top: 40px;
+	margin-bottom: 12px;
+}
+
+
+
+.motiva  {
+
+
+margin-right: 170px;
+margin-left: 60px;
+
+}
+ input[type="checkbox"]{
+    display: none;
+}
+
+input[type="checkbox"]+label::before{
+    content: "";
+    position: absolute;
+    display: block;
+    box-sizing: border-box;
+    width: 20px;
+    height: 20px;
+    margin-top: -10px;
+    left: 0;
+    top: 50%;
+   border-radius: 26%;
+    /* 枠の色変更 お好きな色を */
+    background-color: #f0ebe5; /* 背景の色変更 お好きな色を */
+}
+input[type="checkbox"]+label{
+    display: none;
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    padding-left: 40px;
+    padding-right: 20px;
+}
+
+input[type="checkbox"]:checked+label::after{
+    content: "";
+    position: absolute;
+    display: block;
+    box-sizing: border-box;
+    width: 18px;
+    height: 9px;
+    margin-top: -9px;
+    top: 50%;
+    left: 3px;
+    transform: rotate(-45deg);
+    border-bottom: 3px solid;
+    border-left: 3px solid;
+    border-color:  #585753; /* チェックの色変更 お好きな色を */
+}
+
+
+.motiv dd {
+	font-size: 14px;
+    margin-bottom: 24px;
+}
+
+.texta {
+	display: flex;
+	justify-content: flex-start;
+}
+
+.texta dt {
+	margin-right: 200px;
+	margin-left: 445px;
+}
+
+
+.submit_button {
+	font-size: 18px;
+	height: 54px;
+	width: 298px;
+	background-color: #ffd61a;
+	display: flex;
+	justify-content: center;
+	margin-top: 40px;
+	margin-bottom: 40px;
+	color: white;
+}
+
+.ssubmit {
+	display: flex;
+	justify-content: center;
+}
+
+/*BOTTUN画面
+---------------------*/
+.buttondown {
+	
+	margin-left: 1200px;
+	background-color:#707070 ;
+
+}
+
+.gotop_img {
+	margin-left: 1100px;
+}
+
+.gotop_img {
+  animation: spin 10s linear infinite;
+  /*Set our animation play state to paused initially */
+  animation-play-state: paused; 
+}
+
+.gotop_img:hover {
+  /* Toggle our animation play state to running when we are hovering over our sticker */
+  animation-play-state: running;
+}
+
+
+@keyframes spin {
+  100% {transform: rotate(1turn); }
+}
+
+
+.hzbtn {
+  border-radius: 5px;
+  color: white;
+  margin-left: 1250px;
+  transition: background-color 10s;
+}
+
+.hzbtn:hover{
+	background-color:gold;
+}
+
+
+/*FOOTER画面
+---------------------*/
+.footer {
+	text-align: center;
+	padding-top: 32px;
+	padding-bottom: 32px;
+	background-color: #707070;
+	font-size: 18px;
+	color: white;
+}
